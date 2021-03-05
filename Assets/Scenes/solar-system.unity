@@ -783,7 +783,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1774422915}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1774422917
+--- !u!114 &1774422918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -792,12 +792,97 @@ MonoBehaviour:
   m_GameObject: {fileID: 1774422916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d0d91f9c65eed49a8c8b35b5600671, type: 3}
+  m_Script: {fileID: 11500000, guid: 360a38c11d75bf24991bdc7b1fcddb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 529425362}
-  orbitDistance: 20
-  orbitDegressPerSec: 8
+  AttractorSettings:
+    AttractorObject: {fileID: 529425362}
+    AttractorMass: 1000
+    GravityConstant: 0.1
+  VelocityHandle: {fileID: 2001555381}
+  VelocityHandleLenghtScale: 0
+  TimeScale: 1
+  OrbitData:
+    GravConst: 0.10000000149011612
+    Position:
+      x: 1.1699999570846558
+      y: 0.14651983976364136
+      z: 12.479999542236328
+    AttractorDistance: 12.535579625100764
+    AttractorMass: 1000
+    Velocity:
+      x: 4.009999752044678
+      y: -4.565406322479248
+      z: -3.8299999237060547
+    MG: 100.00000149011612
+    SemiMinorAxis: 13.18025723982952
+    SemiMajorAxis: 2.806045237847188
+    FocalParameter: 61.908902452818886
+    Eccentricity: 4.802362820689394
+    Period: Infinity
+    TrueAnomaly: -0.6091242520450312
+    MeanAnomaly: -2.0929133940392863
+    EccentricAnomaly: -0.5203607795722148
+    MeanMotion: 2.1274433324794595
+    Periapsis:
+      x: 5.033782087656888
+      y: -4.298246867291759
+      z: 8.36818501385125
+    PeriapsisDistance: 10.669602085562676
+    Apoapsis:
+      x: Infinity
+      y: Infinity
+      z: Infinity
+    ApoapsisDistance: Infinity
+    CenterPoint:
+      x: 6.357638417270438
+      y: -5.428661577824948
+      z: 10.568970527616093
+    OrbitCompressionRatio: 22.062688661539795
+    OrbitNormal:
+      x: 0.7169993964127512
+      y: 0.6929888481858554
+      z: -0.07535464042639758
+    SemiMinorAxisBasis:
+      x: -0.5131555987842178
+      y: 0.5978950660056768
+      z: 0.6157863440207799
+    SemiMajorAxisBasis:
+      x: 0.47178723698311426
+      y: -0.4028497813529366
+      z: 0.7843015087858305
+    OrbitNormalDotEclipticNormal: -0.07535464042639758
+  LockOrbitEditing: 0
+--- !u!1 &2001555380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001555381}
+  m_Layer: 0
+  m_Name: Orbit Velocity Helper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001555381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001555380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.18, y: -4.4188867, z: 8.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1290897514091305926
 MeshFilter:
   m_ObjectHideFlags: 0
