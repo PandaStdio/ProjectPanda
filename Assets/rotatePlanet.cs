@@ -13,8 +13,7 @@ public class rotatePlanet : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void PostUpdate()
     {
         gameObject.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
     }
