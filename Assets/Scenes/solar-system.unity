@@ -386,7 +386,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 700778212}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 100000, guid: 94e8b543ccfce214cbe3536377799049, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5302,6 +5302,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &930567189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930567186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c65193b1c94ac48b02e6684b9939bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1097491825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5395,8 +5407,8 @@ Transform:
   m_LocalPosition: {x: 1.27, y: 0, z: -2.9520533}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1774422920}
   - {fileID: 2001555381}
+  - {fileID: 1774422920}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5484,7 +5496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttractorSettings:
-    AttractorObject: {fileID: 700778212}
+    AttractorObject: {fileID: 0}
     AttractorMass: 1000
     GravityConstant: 2
   VelocityHandle: {fileID: 2001555381}
@@ -5575,7 +5587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1260150985}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1290897514091305926
 MeshFilter:
@@ -5654,5 +5666,5 @@ Transform:
   m_LocalScale: {x: 21.838997, y: 21.838993, z: 21.839}
   m_Children: []
   m_Father: {fileID: 529425362}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -33.151, y: -34.63, z: 97.61101}
